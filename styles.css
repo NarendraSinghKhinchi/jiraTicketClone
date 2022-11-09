@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.toolbox{
+    border: 2px solid darkblue;
+    background-color: lightblue;
+    height: 3rem;
+    position: static ;
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+}
+.priority{
+    border: 2px solid darkblue;
+    width: 30%;
+    height: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(149, 239, 239, 0.918);
+}
+.actions{
+    height: 2rem;
+    width: 20%;
+    border: 2px solid darkblue;
+    margin: auto;
+    display: flex;
+    background-color: rgba(149, 239, 239, 0.918);
+}
+.actions > .btn{
+    height: 1.4rem;
+    width: 20%;
+    border: 1px solid blue;
+    background-color: rgb(230, 215, 230);
+    margin: auto;
+    border-radius: 10%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color{
+    height: 1.4rem;
+    width: 20%;
+    border: 1px solid blue;
+    background-color: lightcyan;
+    margin: auto;
+    border-radius: 10%;
+}
+.blue{
+    background-color: blue;
+}
+.black{
+    background: black;
+}
+.coral{
+    background-color: coral;
+}
+.violet{
+    background-color: violet;
+}
+.border{
+    border: 3px solid white;
+}
+.modal{
+    border: 2px solid darkblue;
+    position: absolute ;
+    top: calc((100vh - 35vh) / 2) ;
+    left: calc((100vw - 45vw) / 2);
+    width:45vw ;
+    height: 35vh;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.priorityContainer{
+    background-color: rgba(149, 239, 239, 0.918);
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textarea{
+    height: 100%;
+    width: 70%;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: lightblue;
+    color: white;
+    padding: 2rem;
+    font-size: larger;
+}
+.priority-color{
+    height: 15%;
+    width: 50%;
+    margin: auto;
+    border-radius: 10%;
+}
+.ticket{
+    width: 15rem;
+    height: 10rem;
+    background-color: lightblue;
+}
+.colortag{
+    height: 1rem;
+}
+.id{
+    height: 2rem;
+    background-color: rgba(149, 239, 239, 0.918);
+}
+.taskarea{
+    height: calc(100% - 5rem);
+    padding: 0.4rem;
+    outline: none;
+}
+.ticket-lock{
+    height: 2rem;
+    float: right;
+    padding: 3px;
+}
+.main{
+    /* border: 2px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap:  1rem;
+    justify-content: center;
+}
+@media screen and (min-width:425px) and (max-width : 768px) {
+    .modal{
+        width: 60vw;
+        left: calc((100vw - 60vw) / 2);
+    }
+}
+@media screen and (max-width:425px){
+    .modal{
+        width: 70vw;
+        left: calc((100vw - 70vw) / 2);
+        flex-direction: column;
+    }
+    .priorityContainer{
+        background-color: rgba(149, 239, 239, 0.918);
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .priority-color{
+        height: 70%;
+        width: 15%;
+    }
+    .textarea{
+        height: 80%;
+        width: 100%;
+    }
+    .actions > .btn{
+        height: 1.4rem;
+        width: 30%;
+    }
+}
+
+

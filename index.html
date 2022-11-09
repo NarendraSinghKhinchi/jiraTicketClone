@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>JIRA</title>
+</head>
+<body>
+    <!-- toolbox -->
+    <div class="toolbox">
+        <div class="priority">
+            <div class="color blue"></div>
+            <div class="color violet"></div>
+            <div class="color coral"></div>
+            <div class="color black"></div>
+        </div>
+        <div class="actions">
+            <div class="add btn">+</div>
+            <div class="remove btn">x</div>
+        </div>
+    </div>
+    <!-- main container -->
+    <div class="main">
+        <!-- <div class="ticket">
+             <div class="colortag coral"></div>
+            <div class="id" >sample</div>
+            <div class="taskarea">Lorem ipsum debitis eaque voluptatum explicabo </div>
+            <div class="ticket-lock">
+                <i class="fa-solid fa-lock closed lock"></i>
+                 <i class="fa-solid fa-lock-open open lock"></i>
+            </div> 
+        </div> -->
+    </div>
+    <!-- modal container -->
+    <div class="modal">
+        <textarea class="textarea" spellcheck="false" placeholder="please enter your latest task here."></textarea>
+        <div class="priorityContainer">
+            <div class="priority-color violet"></div>
+            <div class="priority-color black border"></div>
+            <div class="priority-color coral"></div>
+            <div class="priority-color blue"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -13,10 +13,11 @@ body{
     display: flex;
     max-width: 700px;
     margin: auto;
+    
 }
 .priority{
     border: 2px solid darkblue;
-    width: 30%;
+    width: 50%;
     height: 2rem;
     margin: auto;
     display: flex;
@@ -42,14 +43,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 }
 .color{
     height: 1.4rem;
-    width: 20%;
+    width: 30px;
     border: 1px solid blue;
     background-color: lightcyan;
     margin: auto;
     border-radius: 10%;
+    cursor: pointer;
 }
 .blue{
     background-color: blue;
@@ -63,18 +66,23 @@ body{
 .violet{
     background-color: violet;
 }
+.white{
+    text-align: center;
+}
 .border{
     border: 3px solid white;
 }
+
 .modal{
     border: 2px solid darkblue;
     position: absolute ;
     top: calc((100vh - 35vh) / 2) ;
-    left: calc((100vw - 45vw) / 2);
-    width:45vw ;
+    left: calc((100vw - 450px) / 2);
+    width:450px ;
     height: 35vh;
     display: none;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    
 }
 .priorityContainer{
     background-color: rgba(149, 239, 239, 0.918);
@@ -98,7 +106,13 @@ body{
 }
 .priority-color{
     height: 15%;
-    width: 50%;
+    width: 50px;
+    margin: auto;
+    border-radius: 10%;
+}
+#submitBtn{
+    height: 15%;
+    width: 50px;
     margin: auto;
     border-radius: 10%;
 }
@@ -109,6 +123,7 @@ body{
 }
 .colortag{
     height: 1rem;
+    cursor:pointer;
 }
 .id{
     height: 2rem;
@@ -118,11 +133,18 @@ body{
     height: calc(100% - 5rem);
     padding: 0.4rem;
     outline: none;
+    overflow: scroll;
+
 }
+.taskarea::-webkit-scrollbar {
+    display: none;
+  }
 .ticket-lock{
     height: 2rem;
     float: right;
     padding: 3px;
+    cursor:pointer;
+    z-index: 5;
 }
 .main{
     /* border: 2px solid; */
@@ -134,8 +156,8 @@ body{
 }
 @media screen and (min-width:425px) and (max-width : 768px) {
     .modal{
-        width: 60vw;
-        left: calc((100vw - 60vw) / 2);
+        width: 300px;
+        left: calc((100vw - 300px) / 2);
     }
 }
 @media screen and (max-width:425px){

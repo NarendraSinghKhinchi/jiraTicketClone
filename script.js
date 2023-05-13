@@ -6,7 +6,7 @@ let mainele = document.querySelector(".main") ;
 let textarea = document.querySelector(".textarea");
 let allprioritycolors = document.querySelectorAll(".priority-color"); 
 const toolboxPriority = document.querySelectorAll(".toolbox .priority .color");
-
+const submitBtn = document.getElementById("submitBtn");
 // we need to change local storage for => new tickets , priority changes , task edit(text) , removing tickets
 var allticketsArr = [] ;
 let modalprioritycolor = "black";
@@ -38,15 +38,12 @@ removebtn.addEventListener("click" , e => {
         removebtn.innerText = "x" ;
     }
 });
-modalele.addEventListener("keydown" , (e) =>{
-    let key = e.key ;
-    if(key === "Shift"){
+submitBtn.addEventListener("click" , (e)=>{
     generateTicket(textarea.value , modalprioritycolor);
     modalele.style.display = "none" ;
     addflag = false ;
     textarea.value = "" ;
-    } 
-});
+})
 // listener for priority color setting
 allprioritycolors.forEach((colorelement , idx) =>{
     colorelement.addEventListener("click" , e=>{
